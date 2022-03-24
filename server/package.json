@@ -1,0 +1,12 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "tsc-watch --build --noClear --onSuccess \"node dist/main.js\"",
+        "build": "tsc --build",
+        "start": "node dist/main.js"
+    },
+    "dependencies": {
+        "express": "^4.17.3"
+    }
+}
