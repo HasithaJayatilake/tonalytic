@@ -79,6 +79,8 @@ const Hero = () => {
                             marginLeft={{ base: "-5" }}
                             // marginRight={{ base: "0", sm: "%" }}
                             // marginBottom="8%"
+                            boxShadow={"2xl"}
+
                         >
                             <Link
                                 textDecoration="none"

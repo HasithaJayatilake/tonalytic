@@ -31,8 +31,7 @@ const Landing = () => {
                     <Flex minH="65vh">
                         <Hero />
                     </Flex>
-
-                    <BlogPost />
+                    <BlogLatest />
                 </VStack>
             </Center>
         </Box>
