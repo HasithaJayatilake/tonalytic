@@ -1,10 +1,18 @@
 {
-  "private": true,
-  "workspaces": ["client", "server"],
-  "dependencies": {
-    "typescript": "^4.6.2"
-  },
-  "scripts": {
-    "dev:web": "cd client && yarn start"
-  }
+    "private": true,
+    "workspaces": [
+        "client",
+        "server"
+    ],
+    "dependencies": {
+        "typescript": "^4.6.2"
+    },
+    "scripts": {
+        "dev:web": "cd client && yarn start",
+        "dev:server": "yarn workspace server dev"
+    },
+    "author": "Hasitha Jayatilake",
+    "_moduleAliases": {
+        "@server": "server/dist"
+    }
 }

@@ -1,5 +1,6 @@
 {
   "name": "client",
+  "author": "Hasitha Jayatilake",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,10 +1,12 @@
+
+import Axios from "axios";
 export interface BlogPostSummary {
     title: string;
     blurb: string;
     thumbnailSrc: string;
 }
 
-export function getLatestBlogPosts(): BlogPostSummary[] {
+export async function getLatestBlogPosts(): Promise<any> {
     const mockData: BlogPostSummary[] = [
         {
             title: "How Sri lanka's Economy went from Bad to Worse",
@@ -34,5 +36,9 @@ export function getLatestBlogPosts(): BlogPostSummary[] {
                 "https://source.unsplash.com/qg6MDcCWBfM?fit=crop&w=1350&q=80",
         },
     ];
-    return mockData;
+    // return mockData;
+    const res = await Axios.get(`/api/v1/blog/`);
+    return res;
 }
+
+
