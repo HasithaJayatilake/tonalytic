@@ -8,7 +8,7 @@
         "typescript": "^4.6.2"
     },
     "scripts": {
-        "dev:web": "cd client && yarn start",
+        "dev:client": "cd client && yarn start",
         "dev:server": "yarn workspace server dev"
     },
     "author": "Hasitha Jayatilake",

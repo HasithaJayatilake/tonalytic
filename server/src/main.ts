@@ -13,12 +13,12 @@ const port = process.env.PORT || 8082;
 const env = process.env.NODE_ENV || "development";
 
 async function main() {
-    logger.info(`Starting Web Server in ${env} mode...`);
+    logger.info(`Starting Server in ${env} mode...`);
     routingUseContainer(Container);
     
     app.listen(port, () => {
         logger.info(
-            `Website [${env}] Server listening on http://localhost:${port}`
+            `[${env}] Server listening on http://localhost:${port}`
         );
     });
 }

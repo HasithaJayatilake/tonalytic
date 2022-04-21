@@ -13,10 +13,7 @@ import {
 } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "../ColorModeSwitcher";
 import Navbar from "../components/Navbar";
-import ArticleList from "../components/blog/Blog";
 import Hero from "../components/landing/Hero";
-import BlogLatest from "../components/landing/BlogLatest";
-import BlogPost from "../components/blog/BlogPost";
 
 const Landing = () => {
     return (
@@ -31,15 +28,11 @@ const Landing = () => {
                     <Flex minH="65vh">
                         <Hero />
                     </Flex>
-                    <BlogLatest />
                 </VStack>
             </Center>
         </Box>
     );
 };
 
-{
-    /* <ArticleList /> */
-}
-//
+
 export default Landing;

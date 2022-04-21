@@ -7,10 +7,6 @@ export interface ServerConfiguration {
     port: number;
     /** host should include protocol (ie. https/http) */
     host: string;
-    notion: {
-        secret: string;
-        databaseId: string;
-    }
 }
 
 let config: ServerConfiguration;

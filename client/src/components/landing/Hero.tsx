@@ -13,18 +13,10 @@ import {
     useColorModeValue,
     Stack,
 } from "@chakra-ui/react";
-import { ColorModeSwitcher } from "../../ColorModeSwitcher";
-import Navbar from "../Navbar";
-import ArticleList from "../blog/Blog";
 
 const Hero = () => {
     return (
-        <Grid
-            // px={["10", "10", null, null, null]}
-            
-            alignItems="center"
-            
-        >
+        <Grid alignItems="center">
             <Box>
                 <Stack
                     alignItems="center"
@@ -80,7 +72,6 @@ const Hero = () => {
                             // marginRight={{ base: "0", sm: "%" }}
                             // marginBottom="8%"
                             boxShadow={"2xl"}
-
                         >
                             <Link
                                 textDecoration="none"
